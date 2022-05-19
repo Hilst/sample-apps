@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
+    var viewModel = ListViewModel()
+    
     var body: some View {
-        VStack(alignment: .center) {
-            Spacer(minLength: 150)
-            Text("THIS IS A SWIFTUI SAMPLE APP")
-                .font(.headline)
-                .foregroundColor(.blue)
-            Spacer(minLength: 300)
+        NavigationView {
+            List(viewModel.getListItems(), id: \.id) { item in
+                Text(item.name)
+            }
+            .navigationTitle("List Screen")
         }
-        .frame(maxWidth: .infinity)
-        .background(Color.gray.opacity(0.65))
     }
     
 }

@@ -1,0 +1,17 @@
+[
+    {
+        "name": "First Item",
+        "value": 1,
+        "description": "This item is the first on the list"
+    },
+    {
+        "name": "Second Item",
+        "value": 2,
+        "description": "This item is the second on the list"
+    },
+    {
+        "name": "Third Item",
+        "value": 3,
+        "description": "This item is the third on the list"
+    }
+]
